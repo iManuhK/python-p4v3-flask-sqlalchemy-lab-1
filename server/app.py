@@ -39,7 +39,7 @@ def magnitude_filter(mag):
     for quake in earthquakes:
         quakes.append(quake.to_dict())
         
-    body = {'count': len(quakes), 'earthquakes': quakes}
+    body = {'count': len(quakes), 'quakes': quakes}
     status = 200
 
     return make_response(body, status)
